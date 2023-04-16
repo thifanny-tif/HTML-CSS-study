@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario/Conexões</title>
+</head>
+<body>
+
+    <Fieldset>
+        <H1> Formulário de Inscrição</H1>
+        <H2> Conexões Periféricas</H2>
+    </Fieldset>
+
+    <br>
+
+     <fieldset>
+        <p> O Conexões Perifericas é um Programa de Formação e Desenvolvimento Profissional no Campo de Tecnologia da informação.</p>
+        <p>Faça sua inscrição preenchendo os cmapos abaixo e boa sorte!</p>      
+     </fieldset>
+
+    <br>
+
+    <form>
+
+     <fieldset>
+
+        <legend>Dados Pessoais</legend>
+
+        <Div>
+          <label for="nome">Nome Social</label> 
+          <input type="text" name="nome" id="nome" placeholder="Fulano de Tal"")> 
+        </Div>
+<br>
+        <div>
+          <label for="email">E-mail</label> 
+          <input type="email" name="email" id="email" placeholder="Conexoes@perifericas.com"
+          min="1998-01-01" max="">
+        </div>
+<br>
+        <div>
+          <label for="date">Data de Nascimento</label>
+          <input type="date" name="date" id="date" min="1998-01-01" max="2019-12-31">
+        </div>
+<br>
+        </div>
+          <label for="Estado">Estado</label>
+          <select id="Estado">
+            <option selected disabled value="Selecione">Selecione...</option>
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="SE">Sergipe</option>
+          </select>
+        </div>
+
+     </fieldset>
+
+    <br>
+
+     <fieldset>
+        <legend>Meio de transporte</legend>
+           <input type="checkbox" name="meios_de_transporte" value="bike" id="bike">
+           <label for="bike">Bike</label>
+
+          <br> <input type="checkbox" name="meios_de_transporte" value="metro" id="metro">
+           <label for="metro">Metrô</label>
+
+           <br> <input type="checkbox" name="meios_de_transporte" value="busao" id="busao">
+           <label for="busao">Busão</label>
+
+           <br> <input type="checkbox" name="meios_de_transporte" value="uber" id="uber">
+           <label for="uber">Uber</label>
+     </fieldset>
+
+     <fieldset>
+        <legend>Qual das tecnologias abaixo está relacionada com estilo?</legend>
+        
+        <input type="radio" name="html" id="html">
+        <label for="radio">HTML</label>
+       <br>
+        <input type="radio" name="css" id="css">
+        <label for="radio">CSS</label>
+       <br>
+        <input type="radio" name="JS" id="JS">
+        <label for="radio">JavaScript</label>
+        
+     </fieldset>
+    </form>
+
+</body>
+</html>
