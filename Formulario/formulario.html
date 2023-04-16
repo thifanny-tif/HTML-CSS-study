@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="">
+    <title>Faça parte/Coletiva Porto</title>
+</head>
+
+<body>
+  
+         <div>
+
+            <h1 id="titulo">Candidatura de Terapeutas</h1>
+            <p id="subtítulo">Complete suas informações, o prazo de retorno é de 14 dias!</p>
+            <br>
+        
+         </div>
+    
+    <!-- Aqui começa o formulario-->
+    <!-- tudo o que estiver dentro da tag FORM compõem o formulario-->
+    <!-- a FIELDSET também ajuda a agrupar o conteudo dentro da pagina HTML 
+          ao contrario da DIV a FIELDSET é um grupo visivel no navegador-->
+
+    <!--dentro do FORM podemos acrescentar a FILDSET, mas nem sempre é obrigatorio
+                                        vai depender do objetivo do seu projeto!-->
+
+
+           <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="name"> <strong>Nome Completo</strong> </label><br>
+                <input type="text", name="nome", id="nome" required>
+            </div>
+    <br>
+            <di.v class="campo">
+                <label for="Nome Social" placeholder="nome social (opcional)"> <strong>Nome Social</strong> </label><br>
+                <input type="text", name="Sobrenome", id="Sobrenome">
+            </div>
+
+          
+        </fieldset>
+
+<!-- acima criamos uma caixa visivel no navegador com a FIELDSET 
+Dentro adicionamod a DIV para oganizar a LABEL com INPUT dos campos: nome e sobrenome-->
+<!--também criamos uma caixa para data de nascimento com limitações MAX e MIN para idade-->
+
+
+          <!--LABEL + INPUT + BUTTON + REQUERED-->
+    <!--LABEL.: vem acompanhada de um campo de entrada: o INPUT 
+            é usada para criar uma descrição legível para um elemento de formulário-->
+         <!-- acima é vinculada ao elemento -INPUT- usando o atributo FOR que deve ter
+            o mesmo valor que o atributo ID - do INPUT- -->
+        <!--label for= "valor"> titulo que aparecera </label> -->
+    <!--INPUT.: deve vir acompanhado do elemento TYPE para definir o campo de entrada
+            sendo ele: texto, senha, checkbox, radio, botão, file etc...-->
+        <!-- <input type="valor", id="valor do for na label", name="valor enviado ao servidor"-->
+    <!--BUTTON.: o ultimo do forms!-->
+    <!--REQUERED.: serve para tornarmos uma resposta obrigatoria!-->
+
+
+        <div class="campo">
+            <label for="email"> <strong>Email </strong> </label><br>
+            <input type="email", name="email", id="email" required>
+        </div>
+
+<!--  nem sempre precisamos criar um FIELDSET, acima, somente com a DIV criamos o campo do EMAIL-->
+<!-- logo a baixo como criar um campo de questões de escsolhas especificas, o RADIO, ou seja,
+    o usuario só poderá escolher apenas um!-->       
+
+        <div class="campo">
+            <label> <strong> Qual a sua aréa de atuação?</strong> </label><br>
+            <label>
+                <input type="radio" , name="terapia", volue="Psicologo" checked> Psicologia<br>
+            </label>
+
+            <label>
+                <input type="radio" , name="terapia", volue="Psiquiatra"> Psiquiatria<br>
+            </label>
+            <label>
+                <input type="radio" , name="terapia", volue="Psicanalista"> Psicanalise
+            </label>
+
+        </div>
+
+<!--abaixo temo o Selecione... que vai abrir uma caixa com opções para o usuario selecionar-->
+
+        <div class="campo">
+            <label for="Comprovação"> <strong> Classificação: </strong></label>
+            <select id="classificação">
+                <option selected disabled value="Selecione">Selecione...</option>
+                <option>Estagio Obrigatorio</option>
+                <option>CRP</option>
+                <option>Certificado em Psicanalise</option>
+            </select>
+        </div>
+
+<!--abaixo temos outra FIELDSET!... ao ocontrario do RADIO, aqui temos um CHECKBOX
+    que serve para o usuario fazer múltiplas escolhas!-->
+
+
+        <fieldset>
+            <div>
+              <br>  <label> <strong>Selecione o(s) metodo(s) que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="Metodo1", nome="Metodo1" value="Psicanalise">
+                <label for="Metodo1">Psicanalise</label><br>
+                <input type="checkbox" id="Metodo2", nome="Metodo2" value="Abordagem centrada na pessoa">
+                <label for="Metodo2">Abordagem centrada na pessoa</label><br>
+                <input type="checkbox" id="Metodo3", nome="Metodo3" value="Psicodrama">
+                <label for="Metodo3">Psicodrama</label><br>
+                <input type="checkbox" id="Metodo4", nome="Metodo4" value="Gestalt-Terapia">
+                <label for="Metodo4">Gestalt-Terapia</label><br>
+                <input type="checkbox" id="Metodo5", nome="Metodo5" value="Psicologia Analítica Junguiana">
+                <label for="Metodo5">Psicologia Analítica Junguiana</label><br>
+                <input type="checkbox" id="Metodo6", nome="Metodo6" value="Psicodinâmica">
+                <label for="Metodo6">Psicodinâmica</label><br>
+                <input type="checkbox" id="Metodo7", nome="Metodo7" value=" Terapia Cognitivo Comportamental (TCC)">
+                <label for="Metodo7">Terapia Cognitivo Comportamental (TCC) </label><br>
+                <input type="checkbox" id="Metodo8", nome="Metodo8" value="Análise bioenergética">
+                <label for="Metodo8">Análise bioenergética</label><br>
+            </div>
+        </fieldset>
+
+<!-- aqui em baixo temos a caixa de texto com a TEXTAREA, que permite uma criação
+                            de texto para o usuario escrever alguma coisa-->
+
+        <div>
+            <br>
+            <label><strong>Queremos conhecer você, conte um pouco da sua experiência:</strong></label><br>
+            <textarea name="experiência", id="experiência", row="10", style="width: 26em;", maxlength="500", minlength="200", placeholder="Meu nome é Fulano, tenho 24 anos..."></textarea>
+        </div>
+
+        <br><button class="botão" type="submit">Enviar Candidatura</button>
+   
+    <!--BUTTON-->
+    <!--usada para criar um botão interativo que pode executar varias ações
+     enviar um formulário, abrir um link ou executar uma ação em JavaScript-->
+     <!-- <button type="submit", id="submit-form">Enviar formulário</button> -->
+     <!-- o valor SUBMIT: o botão envia o formulário
+          ID: Identificar o botão no JavaScript ou CSS -->
+
+           </form>
+
+
+
+</body>
+</html>
