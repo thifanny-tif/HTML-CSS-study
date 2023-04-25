@@ -1,4 +1,4 @@
-## Primeiro: Criando LandingPage
+## Primeiro: Criando uma LandingPage!
 
 Seja criativo(a)! Explore todos os conceitos que aprendemos nessa imersão e replique (ou melhore, porque não) este projeto prático. Para isso, seu próprio repositório e, com isso, aumente ainda mais seu portfólio de projetos no GitHub!
  
@@ -13,7 +13,7 @@ O link do protótipo utilizado no Figma está disponível no seguinte endereço:
 https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=0%3A1
 Bons estudos wink
  
-## Segundo: Clonando pagina do YouTube
+## Segundo: Clonando pagina do YouTube!
 Neste Desafio você colocará a mão na massa e irá clonar a página do YouTube com CSS colocando em prática todos os conceitos aprendidos, principalmente sobre Flexbox.
  
 Seja criativo(a) e dê a sua identidade para o Projeto. Lembre-se que para um(a) Profissional de Tecnologia é super importante ter um portfólio sólido e completo.
@@ -23,7 +23,7 @@ Aqui deixamos o link do Design no Figma apresentado pela Expert durante o Desafi
 
 Desafio de Flexbox
  
- ## Terceiro: Clonando pagina da HBO MAX com animações
+ ## Terceiro: Clonando pagina da HBO MAX com animações!
 
 Agora é a sua hora de brilhar e construir um perfil de destaque na DIO! Explore todos os conceitos explorados até aqui e replique (ou melhore, porque não?) este projeto prático. Para isso, crie seu próprio repositório e aumente ainda mais seu portfólio de projetos no GitHub, o qual pode fazer toda diferença em suas entrevistas técnicas 😎
  
